@@ -1,0 +1,16 @@
+body {
+    background: black;
+    color: white;
+    margin: 0;
+}
+
+header {
+    background: #666;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
