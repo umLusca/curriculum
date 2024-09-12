@@ -1,10 +1,229 @@
+<!--
+#Ideias pra esse curriculo
+vou colocar aqui, pq n?
+
+as imagens serem trazidas por um mouse, donada
+
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Meu currículo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="/assets/libraries/jquery.js"></script>
+    <style>
+        .imagemquevemvoando {
+            animation-name: arrastando;
+            animation-duration: 5s;
+
+        }
+
+        .mause {
+            animation-name: mause;
+            animation-duration: 10s;
+            left: 2000px;
+            top: 150px;
+            margin-top: 30px;
+            margin-left: 30px;
+
+        }
+
+        @keyframes arrastando {
+
+
+            0% {
+                left: 500px;
+                top: 200px;
+            }
+            100% {
+                left: 0px;
+                top: 0;
+            }
+        }
+
+        @keyframes mause {
+
+            0% {
+                left: 500px;
+                top: 200px;
+            }
+            50% {
+                left: 0px;
+                top: 0;
+            }
+            100% {
+                left: 2000px;
+                top: 150px;
+            }
+        }
+    </style>
 </head>
-<body>
+<body data-bs-theme="dark">
+<nav class="position-sticky sticky-top navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
+        </div>
+    </div>
+</nav>
+<main class="overflow-hidden">
+    <div class="container bg-dark-subtle mt-4 p-3 shadow rounded-3">
+        <div class="mt-3">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h1 class="fs-3 text-center m-0 border-bottom">Lucas Daniel de Freitas Pinheiro</h1>
+                    <div class="m-2 text-center">
+                        <div class="badge text-bg-primary">16/10/2004</div>
+                        <div class="badge text-bg-primary">Manaus - AM</div>
+                        <div class="badge text-bg-primary">Homem</div>
+                        <div class="badge text-bg-primary">Solteiro</div>
+                        <div class="badge text-bg-primary">CNH: AB</div>
+                        <div class="badge text-bg-primary">Disponível para viagem</div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="text-bg-secondary rounded-3 shadow position-relative"
+                         style="width: 100px; height: 100px; ">
+                        <div class="imagemquevemvoando position-absolute p-1 h-100 w-100">
+                            <img class="w-100 h-100 rounded-2" src="https://placehold.co/100" alt="Eu">
+                        </div>
+                        <div class="bg-black position-absolute mause">rat</div>
+
+                        <div class="p-2">Você viu.</div>
+
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center">Sobre mim</h4>
+
+            <p class="m-2">
+                Nascido em Manaus, Estudei meus últimos 5 anos em um Colégio Militar. Durante meu ensino médio,
+                oferecendo ajuda a um amigo que procurava abrir um site de vendas, houve a primeira interação
+                com programação. Pesquisas e estudos foram feitas e passou-se mêses até ficar pronto. Programar
+                havia se tornado um passatempo e antes mesmo de concluir o ensino médio, haviam projetos que
+                foram construídos interinamente.
+            </p>
+
+            <hr>
+
+            <h4 class="text-center m-0">Projetos</h4>
+            <h6 class="text-center text-secondary">Ordem por relevância</h6>
+
+            <div class="row row-cols-3 g-3">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header p-1 text-center">
+                            <a class="fs-5 text-decoration-none" href="https://datalyte.app">Datalyte</a>
+                        </div>
+                        <div class="card-body small p-1">
+                            <p>Uma plataforma de marketing, capaz de gerar relatórios com mapas geográficos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center p-1">
+                            <a class="fs-5 text-decoration-none m-0" href="https://fichasop.com/">FichasOP</a>
+                        </div>
+                        <div class="card-body small p-1">
+                            <p>Não foi um trabalho, e sim um projeto pessoal. Ficou famoso e possui 200k de membros</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center p-1">
+                            <a class="fs-5 text-decoration-none m-0" href="https://fichasop.com/">PlayPixel</a>
+                        </div>
+                        <div class="card-body small p-1">
+                            <p>Uma plataforma de venda de videos e imagens de uso geral. Integrada ao Mercado Pago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center p-1">
+                            <a class="fs-5 text-decoration-none m-0" href="https://fichasop.com/">Curtf</a>
+                        </div>
+                        <div class="card-body small p-1">
+                            <p>Uma ferramenta de marketing digital, funcionamento tal como bit.ly</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center p-1">
+                            <a class="fs-5 text-decoration-none m-0 link-secondary">Renovare (SiriusHR)</a>
+                        </div>
+                        <div class="card-body small p-1">
+                            <p>Plataforma de R&S completa. Sistema de Score, formulários integrados, Procura de Vagas...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center p-1">
+                            <a class="fs-5 text-decoration-none m-0 link-secondary">Byme</a>
+                        </div>
+                        <div class="card-body small p-1">
+                            <p>Uma pequena rede social, com sistemas de amizades, e bate-papo. Foi um projeto pessoal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center p-1">
+                            <a class="fs-5 text-decoration-none m-0 link-secondary">CheckList</a>
+                        </div>
+                        <div class="card-body small p-1">
+                            <p>Uma ferramenta criada para o Vitória Supermercado, para facilitar relatórios e deveres do dia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-center p-1">
+                            <a class="fs-5 text-decoration-none m-0 link-secondary">(Confidencial)</a>
+                        </div>
+                        <div class="card-body small p-1">
+                            <p>Uma pequena plataforma de vendas de um software online, integrada ao MercadoPago.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
