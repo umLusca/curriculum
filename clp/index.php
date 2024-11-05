@@ -1,3 +1,36 @@
+<?php
+
+// URL de destino da requisição
+$url = "https://api.iotebe.com/v2/spot/ng1vt/global_data/data";
+
+// Inicializando cURL
+$ch = curl_init($url);
+
+// Definindo os headers, incluindo a chave x-api-key
+$headers = [
+	'x-api-key: g8mSakhl1j7hHLB8P5uVl3CBNdXNVYBUPU85Ld00'
+];
+
+// Definindo as opções do cURL
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+// Executando a requisição
+$response = curl_exec($ch);
+
+// Verificando se houve erros
+if (curl_errno($ch)) {
+	echo 'Erro no cURL: ' . curl_error($ch);
+} else {
+	// Exibindo a resposta da requisição
+	echo $response;
+}
+
+// Fechando a conexão cURL
+curl_close($ch);
+
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
