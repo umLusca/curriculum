@@ -23,7 +23,9 @@ if (curl_errno($ch)) {
 	echo 'Erro no cURL: ' . curl_error($ch);
 } else {
 	// Exibindo a resposta da requisição
-	echo $response;
+	
+    $data = json_decode($response, true);
+    var_dump($data);
 }
 
 // Fechando a conexão cURL
