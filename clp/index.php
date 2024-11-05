@@ -30,7 +30,7 @@ if (curl_errno($ch)) {
         echo $sensor["spot_id"]."<br>";
         echo $sensor["sensor_id"]."<br>";
         echo $sensor["temperature"]."<br>";
-        echo $sensor["timestamp"]."<br>"."<br>"."<br>";
+        echo $sensor["timestamp"]." ". date("d/m/y H:i",$sensor["timestamp"])."<br>"."<br>"."<br>";
     }
 }
 
