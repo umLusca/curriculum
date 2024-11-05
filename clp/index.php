@@ -26,6 +26,12 @@ if (curl_errno($ch)) {
 	
     $data = json_decode($response, true);
     var_dump($data);
+    foreach ($data as $sensor){
+        echo $sensor["spot_id"]."<br>";
+        echo $sensor["sensor_id"]."<br>";
+        echo $sensor["temperature"]."<br>";
+        echo $sensor["timestamp"]."<br>"."<br>"."<br>";
+    }
 }
 
 // Fechando a conexão cURL
